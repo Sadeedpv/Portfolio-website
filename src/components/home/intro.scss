@@ -1,0 +1,189 @@
+$spacing-left: 8.5em;
+$padding-left-small: 1px;
+
+
+.grid{
+    display: grid;
+    // grid-template-columns: 1fr 1fr;
+    grid-template-areas: 'intro-title intro-pic';
+    margin-top: 5em;
+    width: 100%;
+}
+
+.intro{
+    background-color: transparent;
+    grid-area: intro-title;
+    color: black;
+    padding-left: $spacing-left;
+    padding-top: 6em;
+    h1{
+        font-size: 3.8rem;
+        line-height: 1.55;
+        font-weight: 750;
+        text-align: left;
+        align-items: center;
+        justify-content: center;
+        text-shadow:
+        2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
+        6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
+        12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
+        22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
+        41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05),
+        100px 100px 80px rgba(0, 0, 0, 0.07)
+      ;
+        .name{
+            color:#FF0066;
+            font-weight: 900;
+            font-size: 4.2rem;
+        }
+    }
+    .sub-intro{
+        color:black;
+        opacity: 90%;
+        font-size: 1.85rem;
+    }
+    .intro-button{
+        // border-radius: 1200px;
+        padding: 15px;
+        color: white;
+        background-color: #FF0066;
+        outline: none;
+        border: 1px solid black;
+        font-size: 1.25rem;
+        font-weight: bold;
+        margin-top: 2em;
+        transition: 200ms ease-out;
+        transition-delay: 50ms;
+        transform-origin: center;
+        box-shadow:2.8px 2.8px 2.2px rgba(0, 0, 0, 0.003),
+        6.7px 6.7px 5.3px rgba(0, 0, 0, 0.009),
+        12.5px 12.5px 10px rgba(0, 0, 0, 0.017),
+        22.3px 22.3px 17.9px rgba(0, 0, 0, 0.028),
+        41.8px 41.8px 33.4px rgba(0, 0, 0, 0.043),
+        100px 100px 80px rgba(0, 0, 0, 0.07);
+    }
+    .intro-button:hover{
+        background-color: #FDC6C6;
+        color:black;
+    }
+    .nomore{
+        align-items: center;
+        justify-content: center;
+        font-size: 1.5rem;
+        background-color: transparent;
+        margin-top: 2em;
+        position: relative;
+        justify-content: space-between;
+        transition: all 300ms ease-out;
+        transition-delay: 5ms;
+        &:hover{
+            text-decoration: underline;
+            text-decoration-color: #FF0066;
+        }
+        svg{
+            display: inline-block;
+            transform: scale(1.2);
+            padding-left: 4px;
+            position: relative;
+            &:hover{
+                animation-name: animated-arrow;
+                animation-duration: 500ms;
+                animation-iteration-count: infinite;
+                animation-delay:100ms;
+                transition: cubic-bezier(.53,.32,.69,.38)
+            }
+        }
+    }
+    .gray-text{
+        opacity: 50%;
+        font-size: 1.4rem;
+        max-width: 24em;
+        padding-top: 0.5em;
+    }
+}
+
+.pic{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 2em;
+    grid-area:intro-pic;
+    img{
+        max-width: 200%;
+    }
+}
+@keyframes animated-arrow{
+    0%, 100%{
+        right: 2px;
+    }
+    50%, 75%{
+        left: 2px;
+    }
+    25%{
+        right:1px;
+    }
+
+}
+
+@media all and(max-width:1200px){
+    .intro h1{
+        font-size: 2.6rem;
+        .name{
+            font-size: 2.8rem;
+        }
+
+    }
+    .intro{
+        padding-left: 6em;
+        .gray-text{
+            font-size: 1rem;
+        }
+    }
+    .pic img{
+        max-width: 140%;
+    }
+}
+
+@media all and (max-width:900px){
+    .grid{
+        margin-top: -4em;
+        grid-template-areas: 'intro-title' 'intro-pic';
+    }
+    .pic{
+        grid-area: intro-title;
+        padding-top: 0.5em;
+        margin-bottom:-5em
+    }
+    .intro{
+        grid-area:intro-pic;
+        padding-left: 6em;
+        padding-right: 3.5em;
+        padding-top:0em;
+    }
+}
+
+@media all and (max-width:500px){
+    .pic img{
+        max-width: 120%;
+        margin-left: 2em;
+    }
+    .intro{
+        padding-left: 4em;
+    }
+    .intro{
+        h1{
+            font-size: 2.2rem;
+            .name{
+                font-size: 2.5rem;
+            }
+        }
+        .gray-text{
+            font-size: 1rem;
+        }
+        .intro-button{
+            font-size: 1rem;
+            padding: 10px;
+        }
+    } 
+
+}
