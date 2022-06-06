@@ -1,12 +1,14 @@
 import React, { useEffect, useRef, useState } from 'react'
 import './navbar.css'
 import { FaMoon, FaSun  } from "react-icons/fa";
+import {motion} from 'framer-motion'
 
 function Navbar() {
   const [clicked, setclicked] = useState(false)
   const navRef = useRef()
   const shadowRef = useRef()
-  const [active, setactive] = useState('About')
+  const [active, setactive] = useState('Home')
+  const [navAnime, setnavAnime] = useState(400)
   const hamburgerRef = useRef();
 
   window.onscroll = function () {
@@ -20,9 +22,17 @@ function Navbar() {
   return (
     <>
     {/* This nav component is for mobile devices */}
-    <div className='smaller-nav' ref={hamburgerRef}>
+    <motion.div 
+    animate={{x: navAnime}}
+    transition={{duration: 0.5, stiffness: 150, damping:30}}
+    exit={{x: 800}}
+    className='smaller-nav' ref={hamburgerRef}>
     <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg" className='close-icon' onClick={() =>{
-       hamburgerRef.current.style.transform = "translateX(200%)";
+      setnavAnime(400)
+      setTimeout(() =>{
+       hamburgerRef.current.style.display = 'none';
+        
+      },500)
        document.body.style.overflowY = "auto";
     }}>
 <path d="M2.46758 2L19 18.0888" stroke="#FF0066" strokeWidth="3" strokeLinecap="round"/>
@@ -35,14 +45,15 @@ function Navbar() {
         <li><a href='# '>Projects</a></li>
         <li><a href='# '>Contact</a></li>
       </ul>
-    </div>
+    </motion.div>
 
     <div className='navbar' ref={shadowRef}>
       <div className='logo'><h2>Discover</h2></div>
       <div className='contents'>
       <svg width="53" height="23" viewBox="0 0 53 23" fill="none" xmlns="http://www.w3.org/2000/svg" className='nav-icon' ref={navRef} onClick={() =>{
+        setnavAnime(0)
         document.body.style.overflowY = "hidden";
-        hamburgerRef.current.style.transform = 'translateX(0%)';
+        hamburgerRef.current.style.display = 'block';
 
       }}>
         <path d="M2.02386 1.87744H51" stroke="black" strokeWidth="3" strokeLinecap="round" className='path1'/>

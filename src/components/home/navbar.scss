@@ -195,14 +195,11 @@ $spacing-for-smaller-devices:0.4em 0.6em 0em 1.8em;
     .smaller-nav{
         float: right;
         background-color: white;
-        display: block;
         place-items: center;
         min-height: 100vh;
         position: absolute;
-        transition: all 400ms ease-out;
         z-index: 9999999;
         min-width: 100vw;
-        transform: translateX(200%);
         .close-icon{
             float: right;
             position: relative;
