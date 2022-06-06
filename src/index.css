@@ -5,8 +5,9 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   position: relative;
+  width: 100vw;
   overflow-x: hidden !important;
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: 'Nunito Sans', sans-serif !important;
   background: rgb(255,255,255);
   background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(254,248,248,1) 100%);
 
@@ -19,7 +20,6 @@ body {
 }
 html{
   scroll-behavior: smooth;
-  overflow-x: hidden;
 }
 
 
@@ -33,13 +33,29 @@ html{
 .cursor{
   height: 40px;
   width:40px;
-  z-index: 999;
+  z-index: -99;
   border-radius:50%;
   border: 2px solid black;
   position: absolute;
   transition-duration: 200ms;
   transition-timing-function: ease-out;
 }
+
+.button-arrow{
+  position:fixed;
+  bottom: 0;
+  right:0;
+  background-color:#FF0066;
+  outline:none;
+  border-radius: 50%;
+  padding: 10px;
+  border:none;
+  margin:25px;
+  height: 45px;
+  width: 45px;
+  z-index: 999;
+}
+
 
 
 @media all and (max-width:900px){

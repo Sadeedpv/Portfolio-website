@@ -25,9 +25,11 @@
         document.querySelector('.cursor').style.top = (e.pageY- 20) +  'px';
         document.querySelector('.cursor').style.left = (e.pageX -20) +  'px';
       }),
-      document.addEventListener('scroll', () =>{
-        document.body.scrollLeft = 0;
+      document.addEventListener('scroll', (e) => {
+        document.body.scrollLeft = 0
       })
     })
+
+
   </script>
 </html>

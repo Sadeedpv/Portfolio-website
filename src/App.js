@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import About from "./components/about/About";
 import Intro from "./components/home/Intro";
 import Navbar from "./components/home/Navbar";
+import Backtotop from "./Backtotop"
 import ReactLoading from "react-loading";
 import Cursor from "./Cursor";
 
@@ -16,6 +17,7 @@ function App() {
 
   return state?
     <div ref={loadRef} className="MainPage">
+    <Backtotop />
     <Cursor />
     <Navbar />
     <Intro />
