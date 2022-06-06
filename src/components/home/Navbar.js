@@ -23,7 +23,7 @@ function Navbar() {
     <div className='smaller-nav' ref={hamburgerRef}>
     <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg" className='close-icon' onClick={() =>{
        hamburgerRef.current.style.transform = "translateX(200%)";
-       document.body.style.overflowY = "auto";
+       document.body.style.overflowY = "scroll";
     }}>
 <path d="M2.46758 2L19 18.0888" stroke="#FF0066" strokeWidth="3" strokeLinecap="round"/>
 <path d="M19 2L2.46757 18.0888" stroke="#FF0066" strokeWidth="3" strokeLinecap="round"/>

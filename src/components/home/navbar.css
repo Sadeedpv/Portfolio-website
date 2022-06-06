@@ -114,6 +114,9 @@
     width: 100%;
     margin: 0;
   }
+  .navbar .logo h2 {
+    padding-left: 1.4em;
+  }
 }
 @media all and (max-width: 900px) {
   .navbar {

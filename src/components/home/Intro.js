@@ -10,11 +10,13 @@ function Intro() {
         {/* <p className='sub-intro'>A developing developer</p> */}
         <p className='gray-text'>I am a developing developer. I would love to help you with your next big project. Contact me for all kinds of collaborations</p>
         <button className='intro-button'>Contact me</button>
-        <br></br><p className='nomore'>Know more <svg width="32" height="19" viewBox="0 0 32 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M2 9.72L29 9.72" stroke="#FF0066" strokeWidth="3" strokeLinecap="round"/>
-<path d="M20 17C20 17 22.3561 12.5549 29.9801 10" stroke="#FF0066" strokeWidth="3" strokeLinecap="round"/>
-<path d="M19.3335 2C19.3335 2 21.6896 6.44509 29.3136 9" stroke="#FF0066" strokeWidth="3" strokeLinecap="round"/>
+        <br></br><p className='nomore'>Know more <svg width="28" height="20" viewBox="0 0 28 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M2 10L23.773 10" stroke="#FF0066" strokeWidth="3" strokeLinecap="round"/>
+<path d="M12.8329 2C12.8329 2 15.8729 7.3341 25.7098 10.4" stroke="#FF0066" strokeWidth="3" strokeLinecap="round"/>
+<path d="M12.4303 18.4C12.4303 18.4 15.4702 13.0659 25.3071 10" stroke="#FF0066" strokeWidth="3" strokeLinecap="round"/>
 </svg>
+
+
 
 
 </p>
