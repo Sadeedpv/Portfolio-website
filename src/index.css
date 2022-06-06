@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@700&display=swap');
-@import "https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css";
 
 
 body {
@@ -20,6 +19,26 @@ body {
 html{
   scroll-behavior: smooth;
 }
+
+
+.loader{
+  background-color: white;
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+}
+
+.cursor{
+  height: 40px;
+  width:40px;
+  z-index: 999;
+  border-radius:50%;
+  border: 2px solid black;
+  position: absolute;
+  transition-duration: 200ms;
+  transition-timing-function: ease-out;
+}
+
 
 @media print{
   body{

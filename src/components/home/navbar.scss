@@ -16,7 +16,7 @@ $spacing-for-smaller-devices:0.4em 0.6em 0em 1.8em;
     width:100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin: 0.2em 1em 0em 1em;
+    margin: 0;
     padding-bottom: 5px;
     position: fixed;
     background: rgb(255,255,255);
@@ -63,6 +63,8 @@ $spacing-for-smaller-devices:0.4em 0.6em 0em 1.8em;
                 }
                 a{
                     text-decoration: none;
+                    cursor: pointer;
+                    z-index: 999999;
                     color: black;
                     font-size: 1.4rem;
                     position: relative;

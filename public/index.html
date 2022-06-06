@@ -12,8 +12,21 @@
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
 
     <title>Personal Portfolio project</title>
+
   </head>
   <body>
     <div id="root"></div>
   </body>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      document.addEventListener('mousemove',(e) =>{
+        document.querySelector('.cursor').style.top = (e.pageY- 20) +  'px';
+        document.querySelector('.cursor').style.left = (e.pageX -20) +  'px';
+      }),
+      document.addEventListener('scroll', () =>{
+        document.body.scrollLeft = 0;
+      })
+    })
+  </script>
 </html>
