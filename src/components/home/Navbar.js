@@ -47,7 +47,7 @@ function Navbar() {
       </ul>
     </motion.div>
 
-    <motion.div className='navbar' ref={shadowRef} initial={{y:'-200%'}} animate={{y: '0%'}} transition={{damping:'20', duration:'0.8', delay:'0.2'}} >
+    <motion.div className='navbar' id='backtotop' ref={shadowRef} initial={{y:'-200%'}} animate={{y: '0%'}} transition={{damping:'20', duration:'0.8', delay:'0.2'}} >
       <div className='logo'><h2>Discover</h2></div>
       <div className='contents'>
       <svg width="53" height="23" viewBox="0 0 53 23" fill="none" xmlns="http://www.w3.org/2000/svg" className='nav-icon' ref={navRef} onClick={() =>{

@@ -143,7 +143,7 @@ $padding-left-small: 1px;
         }
     }
     .pic img{
-        max-width: 140%;
+        max-width: 100%;
     }
 }
 
@@ -167,7 +167,7 @@ $padding-left-small: 1px;
 
 @media all and (max-width:500px){
     .pic img{
-        max-width: 120%;
+        max-width: 100%;
         margin-left: 2em;
     }
     .intro{

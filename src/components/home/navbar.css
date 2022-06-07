@@ -95,7 +95,7 @@
 /**** Media queries ****/
 @media all and (max-width: 1520px) {
   .navbar .contents ul li {
-    padding: 0.4em 0.6em 0em 1.8em;
+    padding: 0.4em 0.6em 0em 1.4em;
   }
 
   .navbar .contents ul {
@@ -124,13 +124,14 @@
     position: relative;
   }
   .navbar .logo h2 {
-    padding: 0.4em 0.6em 0em 1.8em;
+    padding: 0.4em 0.6em 0em 1.4em;
   }
   .navbar .contents ul {
     display: none;
   }
   .navbar .contents .nav-icon {
     display: block;
+    margin-right: 2em;
   }
   .navbar .contents .nav-icon .path1 {
     -webkit-animation-name: fill1;
