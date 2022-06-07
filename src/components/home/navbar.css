@@ -27,7 +27,7 @@
   padding: 0.2em 0em 0em 4em;
 }
 .navbar .logo h2::first-letter {
-  font-size: 3.4rem;
+  font-size: 3rem;
   color: #FF0066;
 }
 .navbar .contents {
