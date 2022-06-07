@@ -13,7 +13,7 @@
   padding-top: 6em;
 }
 .intro h1 {
-  font-size: 4rem;
+  font-size: 4.3rem;
   line-height: 1.55;
   font-weight: 750;
   text-align: left;
@@ -28,7 +28,12 @@
 .intro h1 .name {
   color: #FF0066;
   font-weight: 900;
-  font-size: 4.4rem;
+  font-size: 4.6rem;
+  display: inline;
+}
+.intro h1 .name .block {
+  display: inline;
+  white-space: wrap;
 }
 .intro .sub-intro {
   color: black;

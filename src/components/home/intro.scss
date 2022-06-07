@@ -17,12 +17,13 @@ $padding-left-small: 1px;
     padding-left: $spacing-left;
     padding-top: 6em;
     h1{
-        font-size: 4rem;
+        font-size: 4.3rem;
         line-height: 1.55;
         font-weight: 750;
         text-align: left;
         align-items: center;
         justify-content: center;
+
         .hey{
             opacity: 65%;
             position: relative;
@@ -31,7 +32,13 @@ $padding-left-small: 1px;
         .name{
             color:#FF0066;
             font-weight: 900;
-            font-size: 4.4rem;
+            font-size: 4.6rem;
+            display: inline;
+            .block{
+                display: inline;
+                white-space: wrap;
+            }
+
         }
     }
     .sub-intro{
