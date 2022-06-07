@@ -17,11 +17,15 @@ function App() {
 
   return state?
     <div ref={loadRef} className="MainPage">
+      {/* Hero section */}
     <Backtotop />
     <Cursor />
     <Navbar />
     <Intro />
-    <About />
+
+    {/* About section */}
+    
+      <About />
     </div>: <LoadingPage />;
 }
 
