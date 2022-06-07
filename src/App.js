@@ -5,6 +5,7 @@ import Navbar from "./components/home/Navbar";
 import Backtotop from "./Backtotop"
 import ReactLoading from "react-loading";
 import Cursor from "./Cursor";
+import Details from "./components/about/Details";
 
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
     {/* About section */}
     
       <About />
+      <Details />
     </div>: <LoadingPage />;
 }
 

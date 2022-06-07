@@ -78,7 +78,7 @@ $padding-left-small: 1px;
         justify-content: space-between;
         transition: all 300ms ease-out;
         transition-delay: 5ms;
-        z-index: 9999;
+        z-index: 999;
         &:hover{
             text-decoration: underline;
             text-decoration-color: #FF0066;
@@ -99,7 +99,7 @@ $padding-left-small: 1px;
     }
     .gray-text{
         opacity: 50%;
-        font-size: 1.4rem;
+        font-size: 1.2rem;
         max-width: 24em;
         padding-top: 0.5em;
         line-height: 1.6;
@@ -111,7 +111,6 @@ $padding-left-small: 1px;
     align-items: center;
     justify-content: center;
     grid-area:intro-pic;
-    margin-left: 2em;
     img{
         max-width: 200%;
     }

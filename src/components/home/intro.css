@@ -71,7 +71,7 @@
   justify-content: space-between;
   transition: all 300ms ease-out;
   transition-delay: 5ms;
-  z-index: 9999;
+  z-index: 999;
 }
 .intro .nomore:hover {
   text-decoration: underline;
@@ -97,7 +97,7 @@
 }
 .intro .gray-text {
   opacity: 50%;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   max-width: 24em;
   padding-top: 0.5em;
   line-height: 1.6;
@@ -108,7 +108,6 @@
   align-items: center;
   justify-content: center;
   grid-area: intro-pic;
-  margin-left: 2em;
 }
 .pic img {
   max-width: 200%;

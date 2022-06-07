@@ -23,7 +23,7 @@ function Intro() {
 </p> </motion.div>
 
 
-<motion.div className='pic' initial={{x:'100%'}} animate={{x:'0%'}} transition={{delay:'1.6', duration:'1.2', type:'spring',damping:'30', stiffness:'100'}}><img src={blob}></img></motion.div>
+<motion.div className='pic' initial={{x:'100%'}} animate={{x:'0%'}} transition={{delay:'1.6', duration:'1.2', type:'spring', stiffness:'100'}}><img src={blob} alt='hero section image'></img></motion.div>
 </div>
   )
 }
