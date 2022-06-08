@@ -9,11 +9,11 @@ function Intro() {
     
     <div className='grid'>
     <motion.div className='intro'>
-        <h1><motion.span className='hey'  initial={{opacity:'0%'}} animate={{opacity:'100%'}} transition={{delay:'0.8', duration:'2'}}>Hello,</motion.span> <br />
-         I'm <motion.span className='name'  initial={{opacity:'0%'}} animate={{opacity:'100%'}} transition={{delay:'1.2', duration:'2'}} exit={{opacity:'0%', y:'200%'}}
+        <h1><motion.span className='hey'  initial={{opacity:window.innerWidth < 996?'100%':'0%'}} animate={{opacity:'100%'}} transition={{delay:'0.8', duration:'2'}}>Hello,</motion.span> <br />
+         I'm <motion.span className='name'  initial={{opacity:window.innerWidth < 996?'100%':'0%'}} animate={{opacity:'100%'}} transition={{delay:'1.2', duration:'2'}} exit={{opacity:'0%', y:'200%'}}
          
          >&#60;<TypeAnimation cursor={true} sequence={['Mohd Sadeed', 5000, 'A Developer', 5000, '']} repeat={Infinity} className='block'></TypeAnimation>  /&#62;</motion.span></h1>
-        <motion.p className='gray-text' initial={{opacity:'0%'}} animate={{opacity:'50%'}} transition={{delay:'2', duration:'2'}}>I am a developing developer. I would love to help you with your next big project. Contact me for all kinds of collaborations</motion.p>
+        <motion.p className='gray-text' initial={{opacity:window.innerWidth < 996?'100%':'50%'}} animate={{opacity:'50%'}} transition={{delay:'2', duration:'2'}}>I am a developing developer. I would love to help you with your next big project. Contact me for all kinds of collaborations</motion.p>
         <button className='intro-button'>Contact me</button>
         <br></br><p className='nomore'>Know more <svg width="28" height="20" viewBox="0 0 28 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M2 10L23.773 10" stroke="#FF0066" strokeWidth="3" strokeLinecap="round"/>
@@ -23,7 +23,7 @@ function Intro() {
 </p> </motion.div>
 
 
-<motion.div className='pic' initial={{x:'100%'}} animate={{x:'0%'}} transition={{delay:'1.6', duration:'0.6', type:'spring'}}><img src={blob} alt='hero section image'></img></motion.div>
+<motion.div className='pic' initial={{x:window.innerWidth < 996?'0%':'100%'}} animate={{x:'0%'}} transition={{delay:'1.6', type:'spring'}}><img src={blob} alt='hero section image'></img></motion.div>
 </div>
   )
 }

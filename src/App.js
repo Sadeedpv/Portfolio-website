@@ -6,6 +6,7 @@ import Backtotop from "./Backtotop"
 import ReactLoading from "react-loading";
 import Cursor from "./Cursor";
 import Details from "./components/about/Details";
+import Skill from "./components/about/Skill";
 
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
     
       <About />
       <Details />
+      <Skill />
     </div>: <LoadingPage />;
 }
 
