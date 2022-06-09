@@ -8,6 +8,7 @@ import Cursor from "./Cursor";
 import Details from "./components/about/Details";
 import Skill from "./components/about/Skill";
 import Service from "./components/services/Service";
+import Projects from "./components/Projects/Projects";
 
 
 function App() {
@@ -33,6 +34,9 @@ function App() {
       <Skill />
       <About text='Create Your own Mark!' first={false}/>
       <Service />
+
+      {/* Projects Section */}
+      <Projects />
     </div>: <LoadingPage />;
 }
 
