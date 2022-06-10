@@ -67,6 +67,9 @@ $padding-left-small: 1px;
     .intro-button:hover{
         background-color: #FDC6C6;
         color:black;
+        box-shadow: 1px 9px 14px -2px #FDC6C6;
+        -webkit-box-shadow: 1px 9px 14px -2px #FDC6C6;
+        -moz-box-shadow: 1px 9px 14px -2px #FDC6C6;
     }
     .nomore{
         align-items: center;
