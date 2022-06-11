@@ -63,21 +63,27 @@ function Navbar() {
 
 
         <ul>
+
           <li><a href='# ' className={active === 'Home' ? 'active icon': ''} 
           onClick={() =>{
             setactive('Home')
           }}>Home</a></li>
-          <li><a href='# ' onClick={() =>{
+
+          <li><a href='# ' onClick={(e) =>{
+            e.preventDefault();
+            window.location.replace("/#about")
             setactive('About')
-          }
-          }
-          className={active === 'About' ? 'active icon' : ''}
+          }} className={active === 'About' ? 'active icon' : ''}
           >About</a></li>
-          <li><a href='# ' onClick={() =>{
+
+
+          <li><a href='# ' onClick={(e) =>{
+            e.preventDefault();
+            window.location.replace("/#projects")
             setactive('Projects')
-          }}
-          className={active === 'Projects' ? 'active icon' : ''}
+          }} className={active === 'Projects' ? 'active icon' : ''}
           >Projects</a></li>
+
           <li><a href='# ' onClick={() =>{
             setactive('Contact')
           }}

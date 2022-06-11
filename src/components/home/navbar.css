@@ -49,7 +49,8 @@
   padding-left: 2em;
 }
 .navbar .contents ul li .active {
-  border: 4px solid #FDC6C6;
+  border: 3px solid #FF0066;
+  border-radius: 10px;
   padding: 5px;
   padding-left: 14px;
   padding-right: 14px;
@@ -71,7 +72,7 @@
   background-color: #FF0066;
   position: absolute;
   bottom: 0;
-  left: 30px;
+  left: 25px;
   transition: 500ms;
 }
 .navbar .contents ul li a::after {
@@ -82,7 +83,7 @@
   position: absolute;
   bottom: 0;
   transition: 500ms;
-  right: 30px;
+  right: 25px;
 }
 .navbar .contents ul li a:not(.icon):hover::before {
   width: 60%;

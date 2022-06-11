@@ -7,7 +7,7 @@ function About(props) {
   const scrollImg = useRef()
 
   return (
-    <div className="about">
+    <div className="about" id="about">
       <img src={props.first? cursor: cursor2} alt={props.first?'Do nothing and feel great!': 'Create Your own Mark'} style={{display:'none', position:'absolute', zIndex:'9999'}} ref={scrollImg}/>
       <hr />
       <h4 className='scrollText' onMouseEnter={(e) =>{
