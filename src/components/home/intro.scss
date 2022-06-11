@@ -8,6 +8,7 @@ $padding-left-small: 1px;
     grid-template-areas: 'intro-title intro-pic';
     margin-top: 5em;
     width: 100%;
+    place-items: center;
 }
 
 .intro{

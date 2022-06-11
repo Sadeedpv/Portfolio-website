@@ -24,9 +24,8 @@ function Intro() {
 
 
 <div className='pic'>
-  <motion.img src={blob} alt='hero section image'  initial={{x:window.innerWidth < 996?0:900}} animate={{x:0}} transition={{x: { type: "spring"},
-             duration: 1.2,
-            delay: 0.6,}} exit={{opacity:0}}></motion.img>
+  <motion.img src={blob} alt='hero section image'  initial={{x:window.innerWidth < 996?0:900, opacity:0}} animate={{x:0, opacity:'100%'}} transition={{x: { type: "tween", damping:20}, duration: 4,delay: 0.6}}
+  exit={{opacity:0}}></motion.img>
   </div>
 </div>
   )
