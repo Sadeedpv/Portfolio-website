@@ -71,7 +71,7 @@ function Navbar() {
 
           <li><a href='# ' onClick={(e) =>{
             e.preventDefault();
-            window.location.replace("/#about")
+            window.location.replace("/Portfolio-website/#about")
             setactive('About')
           }} className={active === 'About' ? 'active icon' : ''}
           >About</a></li>
@@ -79,7 +79,7 @@ function Navbar() {
 
           <li><a href='# ' onClick={(e) =>{
             e.preventDefault();
-            window.location.replace("/#projects")
+            window.location.replace("/Portfolio-website/#projects")
             setactive('Projects')
           }} className={active === 'Projects' ? 'active icon' : ''}
           >Projects</a></li>
