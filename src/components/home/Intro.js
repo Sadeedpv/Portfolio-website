@@ -1,14 +1,18 @@
-import React, { useState } from 'react'
+import React, { useState, useContext } from 'react'
 import './intro.css'
 import blob from './blob.png'
 import { motion } from 'framer-motion'
 import TypeAnimation from 'react-type-animation';
+import {Darkmodecontext} from '../../Darkmode'
+
 
 function Intro() {
+const {darksign} = useContext(Darkmodecontext)
+
   return (
     
     <div className='grid'>
-    <motion.div className='intro'>
+    <motion.div className='intro' style={{ color:darksign? 'black':'white'}}>
         <h1><motion.span className='hey'  initial={{opacity:window.innerWidth < 996?'100%':'0%'}} animate={{opacity:'100%'}} transition={{delay:'0.8', duration:'2'}}>Hello,</motion.span> <br />
          I'm <motion.span className='name'  initial={{opacity:window.innerWidth < 996?'100%':'0%'}} animate={{opacity:'100%'}} transition={{delay:'1.2', duration:'2'}} exit={{opacity:'0%', y:'200%'}}
          
