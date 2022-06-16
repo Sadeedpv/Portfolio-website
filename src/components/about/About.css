@@ -1,0 +1,47 @@
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0.5em;
+  font-size: 8rem;
+  color: #FF0066;
+  font-weight: 900;
+  white-space: nowrap;
+}
+.about h4 {
+  -webkit-animation-name: lefttoright;
+          animation-name: lefttoright;
+  position: relative;
+  z-index: 99;
+  transform: all 300ms;
+  -webkit-animation-duration: 100s;
+          animation-duration: 100s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+.about h4:hover {
+  color: rgb(96, 95, 95);
+}
+
+@-webkit-keyframes lefttoright {
+  100% {
+    transform: translateX(-70%);
+  }
+}
+
+@keyframes lefttoright {
+  100% {
+    transform: translateX(-70%);
+  }
+}
+@media all and (max-width: 1200px) {
+  .about {
+    display: none;
+  }
+}/*# sourceMappingURL=About.css.map */

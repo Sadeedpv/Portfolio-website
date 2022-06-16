@@ -1,0 +1,38 @@
+.about{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0.5em;
+    font-size: 8rem;
+    color: #FF0066;
+    font-weight: 900;
+    white-space: nowrap;
+    h4{
+        animation-name: lefttoright;
+        position: relative;
+        z-index: 99;
+        transform: all 300ms;
+        animation-duration: 100s;
+        animation-iteration-count: infinite;
+        animation-delay: 0s;
+        animation-timing-function: linear;
+        animation-fill-mode: forwards;
+        &:hover{
+            color: rgb(96, 95, 95);
+        }
+    }
+
+}
+
+@keyframes lefttoright{
+    100%{
+        transform: translateX(-70%);
+    }
+}
+
+@media all and(max-width:1200px){
+    .about{
+        display: none
+    }
+}
+

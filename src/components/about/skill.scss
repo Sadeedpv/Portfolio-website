@@ -1,0 +1,48 @@
+.skill-grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    place-items: center;
+    margin-top: 4em;
+    .flex-skill{
+        display: flex;
+        flex-direction: column;
+        margin: 2em;
+        justify-content: center;
+        .icon-fa{
+            font-size: 60px;
+            margin: 1rem;
+            color: #CDD8E5;
+            margin-bottom: 40px;
+            align-items: center;
+            justify-content: center;
+            &:hover{
+                color: #FF0066;
+            }
+        }
+        .skill-title{
+            font-size: 1.4rem;
+            font-weight: 750;
+            justify-content: center;
+            align-items: center;
+            margin-top: 0;
+        }
+        .skill-desc{
+            opacity: 60%;
+            font-size: 1rem;
+            max-width: 15em;
+            line-height: 1.75;
+            margin-top: 10px;
+
+        }
+    }
+
+}
+
+@media all and (min-width:776px){
+    .skill-grid{
+        grid-template-columns: repeat(3, 1fr);
+        margin-top: 6.5em;
+        margin-bottom: 7.5em;
+    }
+}
