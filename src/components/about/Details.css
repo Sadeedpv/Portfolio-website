@@ -36,6 +36,20 @@
   padding: 20px;
   padding-left: 2.5em;
 }
+.aboutbg .grid-about .detailed .follow-more {
+  margin-top: 2em;
+  position: relative;
+  bottom: 0;
+  font-size: 1.4em;
+  font-weight: 500;
+}
+.aboutbg .grid-about .detailed .follow-more .icon-href {
+  padding-left: 12px;
+  color: #FF0066;
+}
+.aboutbg .grid-about .detailed .follow-more .icon-href:hover {
+  color: #602b40;
+}
 .aboutbg .grid-about .detailed .about-text {
   font-size: 18px;
   font-weight: 400;

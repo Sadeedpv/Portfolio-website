@@ -33,6 +33,20 @@
             justify-content: center;
             padding: 20px;
             padding-left: 2.5em;
+            .follow-more{
+                margin-top: 2em;
+                position: relative;
+                bottom: 0;
+                font-size: 1.4em;
+                font-weight: 500;
+                .icon-href{
+                    padding-left: 12px;
+                    color: #FF0066;
+                    &:hover{
+                        color: #602b40;
+                    }
+                }
+            }
             .about-text{
                 font-size: 18px;
                 font-weight: 400;

@@ -18,7 +18,10 @@ const {darksign} = useContext(Darkmodecontext)
          
          >&#60;<TypeAnimation cursor={true} sequence={['', 5000 ,'Mohd Sadeed', 5000, 'A Developer', 5000, '']} repeat={Infinity} className='block'></TypeAnimation>  /&#62;</motion.span></h1>
         <motion.p className='gray-text' initial={{opacity:window.innerWidth < 996?'100%':'50%'}} animate={{opacity:'50%'}} transition={{delay:'2', duration:'2'}}>I am a developing developer. I would love to help you with your next big project. Contact me for all kinds of collaborations</motion.p>
-        <button className='intro-button'>Contact me</button></motion.div>
+        <button className='intro-button' onClick={(e) => {
+                window.location = 'mailto:muhammedsadeed70@gmail.com';
+                e.preventDefault();
+            }}>Contact me</button></motion.div>
 
 
 <div className='pic'>

@@ -96,7 +96,9 @@ function Navbar() {
           }} className={active === 'Projects' ? 'active icon' : ''}
           >Projects</a></li>
 
-          <li><a href='# ' style={{ color:darksign? 'black':'white'}} onClick={() =>{
+          <li><a href='# ' style={{ color:darksign? 'black':'white'}} onClick={(e) =>{
+            e.preventDefault();
+            window.location = 'mailto:muhammedsadeed70@gmail.com'
             setactive('Contact')
           }}
           className={active === 'Contact' ? 'active icon' : ''}
