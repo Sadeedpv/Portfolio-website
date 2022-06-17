@@ -25,7 +25,7 @@ const {darksign} = useContext(Darkmodecontext)
 
 
 <div className='pic'>
-  <motion.img src={blob} alt='hero section image'  initial={{x:window.innerWidth < 996?0:900, opacity:0}} animate={{x:0, opacity:'100%'}} transition={{x: { type: "tween", damping:20}, duration: 2.5,delay: 0.6}}
+  <motion.img src={blob} alt='hero section image'  initial={{x:window.innerWidth < 996?0:900, opacity:0}} animate={{x:0, opacity:'100%'}} transition={{x: { type: "tween", damping:50}, duration: 2.5,delay: 0.6}}
   exit={{opacity:0}}></motion.img>
   </div>
 </div>

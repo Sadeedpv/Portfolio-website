@@ -33,7 +33,7 @@ function Details() {
   const {darksign, toggledarkmode} = useContext(Darkmodecontext)
 
   return (
-    <motion.div  style={{ backgroundColor:darksign? '#f5f5f5':'#050505', color:darksign?'#233142':'white'}} ref={ref} initial={{scale:0}} animate={{scale:inView? 1: 0}} transition={{duration:0.8}} className='aboutbg'>
+    <div  style={{ backgroundColor:darksign? '#f5f5f5':'#050505', color:darksign?'#233142':'white'}} className='aboutbg'>
           <SlDialog label="Forbes"  open={open} onSlAfterHide={() => setOpen(false)}>
             Without a website, people may question your legitimacy as a business. Having a website is an opportunity to make a great first impression. Showcasing your brand to your prospective customers is one of the most important things that you can do
           <SlButton slot="footer" variant="danger" onClick={() => setOpen(false)}>
@@ -59,7 +59,7 @@ function Details() {
         <img src={about} alt='About me'/>
         </motion.div>
 
-        <motion.div className='detailed' ref={refdetail} initial={{x:'150%', opacity:'0%'}} animate={{x: inViewdetail? '0%': '150%', opacity:inViewdetail? '100%': '0%'}} transition={{ duration:1.4 }}>
+        <motion.div className='detailed' ref={refdetail} initial={{x:'100%', opacity:'0%'}} animate={{x: inViewdetail? '0%': '100%', opacity:inViewdetail? '100%': '0%'}} transition={{ duration:1.4 }}>
           <div className='about-text'><p>It's not about what I can do, but what you can do with my help.
             I can help your company grow large. I am currently a <strong> front-end developer </strong> and extending my skills on full-stack web development. </p>
             <ul>
@@ -72,7 +72,7 @@ function Details() {
             <div className='follow-more'>Follow me on <a className='icon-href' href='https://github.com/Sadeedpv'><FaGithub /></a> <a className='icon-href' href='https://www.instagram.com/sadio_pv/'><FaInstagram /></a> <a className='icon-href' href='https://twitter.com/PvSadeed'><FaTwitter /></a> <a className='icon-href' href='https://stackoverflow.com/users/18243271/sadeed-pv'><FaStackOverflow /></a></div>
         </motion.div>
     </div>
-    </motion.div>
+    </div>
   )
 }
 

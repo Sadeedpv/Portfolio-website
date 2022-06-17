@@ -1,0 +1,95 @@
+.plans {
+  margin-top: 4em;
+  margin-bottom: 16em;
+  display: grid;
+  place-items: center;
+  background-color: transparent;
+}
+.plans .card-head {
+  color: #FF0066;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 46px;
+  font-weight: 700;
+  padding: 10px;
+  padding-top: 15px;
+}
+.plans .card-grid {
+  display: grid;
+  place-items: center;
+  grid-template-rows: 1fr;
+  margin-top: 6em;
+  margin-left: 2em;
+  margin-right: 2em;
+  gap: 2em;
+}
+.plans .card-grid .carditem {
+  border: 2px solid #f2f2f2;
+  border-top: 10px solid #FF0066;
+  border-radius: 15px;
+  padding: 50px;
+  box-shadow: 10px 11px 36px 16px rgba(0, 0, 0, 0.17);
+  transition: transform 300ms;
+  padding-left: 2.6em;
+  padding-right: 2.6em;
+  transform: scale(0.9);
+  max-width: 85%;
+}
+.plans .card-grid .carditem:hover {
+  transform: scale(1);
+}
+.plans .card-grid .carditem .carditem-head {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1em;
+}
+.plans .card-grid .carditem .carditem-head .money {
+  font-size: 3.5em;
+}
+.plans .card-grid .carditem .carditem-subhead {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2em;
+  padding: 20px;
+  color: #FF0066;
+  font-weight: 700;
+  margin-bottom: 1.2em;
+}
+.plans .card-grid .carditem .recomm {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5em;
+  opacity: 80%;
+  color: green;
+}
+.plans .card-grid .carditem .cardbody {
+  text-align: left;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.plans .card-grid .carditem .cardbody ul {
+  padding: 5px;
+  line-height: 1.5;
+  opacity: 60%;
+}
+.plans .card-grid .carditem .cardbody ul li {
+  font-size: 1.2em;
+  list-style: circle;
+  font-weight: 400;
+  padding: 10px;
+}
+
+@media all and (min-width: 976px) {
+  .card-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0em;
+    margin-left: 2em;
+    margin-right: 2em;
+    margin-top: 9em;
+  }
+}/*# sourceMappingURL=card.css.map */
