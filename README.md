@@ -11,8 +11,7 @@
 
 | Tech stack        | Usage           |
 | ------------- |:-------------:|
-| Framer-motion      | To integrate animations into my website, I used Framer-motion, An open source and production-ready motion
-library for React on the web. |
+| Framer-motion      | To integrate animations into my website, I used Framer-motion, An open source and production-ready motion library for React on the web. |
 | React-intersection-observer      | Framer motion with react-intersection-oberver library enables you to display animation on scroll, it's a super combo ✨      |
 | Shoelace.js | I used shoelace.js as my component library      |
 
