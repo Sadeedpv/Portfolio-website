@@ -10,6 +10,7 @@ import Skill from "./components/about/Skill";
 import Service from "./components/services/Service";
 import Projects from "./components/Projects/Projects";
 import {Darkmodecontext} from './Darkmode'
+import Card from "./components/plans/Card";
 
 
 
@@ -42,6 +43,10 @@ function App() {
       <Skill />
       <About text='Create Your own Mark!' first={false}/>
       <Service />
+
+      {/* Plan cards */}
+
+      <Card />      
 
       {/* Projects Section */}
       <Projects />
