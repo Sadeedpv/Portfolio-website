@@ -16,6 +16,7 @@
 | Shoelace.js | I used shoelace.js as my component library. You can see more [here](https://shoelace.style/) 👍    |
 | React-typing-animation  | This is npm library is used to create the typing animation seen on the hero section |
 |react-parallax-tilt| This library is very useful in creating tilting animations on hover 🚀|
+|react-icons| I used the library to display all the icons you could see on my website 🤠. They provide bootstrap icons, Font-awesome, Iconsicons.etc.|
 
 
 Thank you!

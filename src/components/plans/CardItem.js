@@ -17,7 +17,7 @@ function CardItem(props) {
 
 
   return (
-    <motion.div initial={{x:'100%', opacity:'0%'}} animate={{x:inView?'0%':'100%', opacity:inView?'100%':'0%'}} transition={{duration:0.5, ease: 'easeInOut', delay:props.delay}} className='carditem' ref={ref} style={{transform:props.size === 'large'? 'scale(1':'scale(0.9)',
+    <motion.div initial={{x:'-20%', opacity:'0%'}} animate={{x:inView?'0%':'-20%', opacity:inView?'100%':'0%'}} transition={{duration:0.5, ease: 'easeInOut', delay:props.delay}} className='carditem' ref={ref} style={{transform:props.size === 'large'? 'scale(1':'scale(0.9)',
     backgroundColor:darksign?'#fffafb':'#fff0f5'}}>
         <div className='carditem-head'><FaRupeeSign style={{fontSize:'35px', paddingRight:'2px'}} /><p className='money'>{props.money}</p></div>
         {props.size === 'large' && <div className='recomm'>Recommended</div>}

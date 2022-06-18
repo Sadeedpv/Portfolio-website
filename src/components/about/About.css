@@ -13,7 +13,7 @@
           animation-name: lefttoright;
   position: relative;
   z-index: 99;
-  transform: all 300ms;
+  transition: transform 300ms;
   -webkit-animation-duration: 100s;
           animation-duration: 100s;
   -webkit-animation-iteration-count: infinite;
@@ -27,6 +27,7 @@
 }
 .about h4:hover {
   color: rgb(96, 95, 95);
+  cursor: none;
 }
 
 @-webkit-keyframes lefttoright {

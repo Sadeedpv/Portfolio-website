@@ -59,7 +59,7 @@ function Details() {
         <img src={about} alt='About me'/>
         </motion.div>
 
-        <motion.div className='detailed' ref={refdetail} initial={{x:'100%', opacity:'0%'}} animate={{x: inViewdetail? '0%': '100%', opacity:inViewdetail? '100%': '0%'}} transition={{ duration:1.4 }}>
+        <motion.div className='detailed' ref={refdetail} initial={{x:'40%', opacity:'0%'}} animate={{x: inViewdetail? '0%': '40%', opacity:inViewdetail? '100%': '0%'}} transition={{ duration:1.4 }}>
           <div className='about-text'><p>It's not about what I can do, but what you can do with my help.
             I can help your company grow large. I am currently a <strong> front-end developer </strong> and extending my skills on full-stack web development. </p>
             <ul>
