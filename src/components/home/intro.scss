@@ -49,7 +49,7 @@ $padding-left-small: 1px;
     }
     .intro-button{
         // border-radius: 1200px;
-        padding: 15px;
+        padding: 12px;
         color: white;
         background-color: #FF0066;
         z-index: 9999;
@@ -90,6 +90,23 @@ $padding-left-small: 1px;
         max-width: 200%;
     }
 }
+
+.follow-more{
+    margin-top: 1em;
+    position: relative;
+    bottom: 0;
+    font-size: 1.4em;
+    font-weight: 500;
+    .icon-href{
+        padding-left: 12px;
+        color: #FF0066;
+        font-size: 2rem;
+        &:hover{
+            color: #602b40;
+        }
+    }
+}
+
 
 @media all and(max-width:1200px){
     .intro h1{

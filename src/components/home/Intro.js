@@ -3,7 +3,9 @@ import './intro.css'
 import blob from './blob.png'
 import { motion } from 'framer-motion'
 import TypeAnimation from 'react-type-animation';
-import {Darkmodecontext} from '../../Darkmode'
+import {Darkmodecontext} from '../../Darkmode';
+import {FaGithub, FaInstagram, FaTwitter, FaStackOverflow} from 'react-icons/fa'
+
 
 
 function Intro() {
@@ -18,6 +20,8 @@ const {darksign} = useContext(Darkmodecontext)
          
          >&#60;<TypeAnimation cursor={true} sequence={['', 5000 ,'Mohd Sadeed', 5000, 'A Developer', 5000, '']} repeat={Infinity} className='block'></TypeAnimation>  /&#62;</motion.span></h1>
         <motion.p className='gray-text' initial={{opacity:window.innerWidth < 996?'100%':'50%'}} animate={{opacity:'50%'}} transition={{delay:'2', duration:'2'}}>I am a developing developer. I would love to help you with your next big project. Contact me for all kinds of collaborations</motion.p>
+        <div className='follow-more'><a className='icon-href' href='https://github.com/Sadeedpv'><FaGithub /></a> <a className='icon-href' href='https://www.instagram.com/sadio_pv/'><FaInstagram /></a> <a className='icon-href' href='https://twitter.com/PvSadeed'><FaTwitter /></a> <a className='icon-href' href='https://stackoverflow.com/users/18243271/sadeed-pv'><FaStackOverflow /></a></div>
+
         <button className='intro-button' onClick={(e) => {
                 window.location = 'mailto:muhammedsadeed70@gmail.com';
                 e.preventDefault();

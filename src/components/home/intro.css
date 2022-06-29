@@ -42,7 +42,7 @@
   font-size: 1.85rem;
 }
 .intro .intro-button {
-  padding: 15px;
+  padding: 12px;
   color: white;
   background-color: #FF0066;
   z-index: 9999;
@@ -81,6 +81,22 @@
 }
 .pic img {
   max-width: 200%;
+}
+
+.follow-more {
+  margin-top: 1em;
+  position: relative;
+  bottom: 0;
+  font-size: 1.4em;
+  font-weight: 500;
+}
+.follow-more .icon-href {
+  padding-left: 12px;
+  color: #FF0066;
+  font-size: 2rem;
+}
+.follow-more .icon-href:hover {
+  color: #602b40;
 }
 
 @media all and (max-width: 1200px) {

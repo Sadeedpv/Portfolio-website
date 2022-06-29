@@ -5,7 +5,6 @@ import {motion} from 'framer-motion'
 import { useInView } from "react-intersection-observer";
 import { SlButton, SlDialog } from '@shoelace-style/shoelace/dist/react';
 import {Darkmodecontext} from '../../Darkmode'
-import {FaGithub, FaInstagram, FaTwitter, FaStackOverflow} from 'react-icons/fa'
 
 
 
@@ -69,7 +68,6 @@ function Details() {
 
             </ul>
             </div>
-            <div className='follow-more'>Follow me on <a className='icon-href' href='https://github.com/Sadeedpv'><FaGithub /></a> <a className='icon-href' href='https://www.instagram.com/sadio_pv/'><FaInstagram /></a> <a className='icon-href' href='https://twitter.com/PvSadeed'><FaTwitter /></a> <a className='icon-href' href='https://stackoverflow.com/users/18243271/sadeed-pv'><FaStackOverflow /></a></div>
         </motion.div>
     </div>
     </div>
