@@ -21,7 +21,7 @@ function Projects() {
         <div className='project-flex'>
 
             {projectlist.map((e, index) =>{
-                return <><Tilt><p className='tilted-para' whilehover={{color:'red'}} key={index}>{e.name}</p></Tilt><hr className='solid'/></>
+                return <><Tilt><p className='tilted-para' whilehover={{color:'red'}} key={index}><a className='broken-link' href={e.link}>{e.name}</a></p></Tilt><hr className='solid'/></>
             })}
 
 
@@ -32,7 +32,7 @@ function Projects() {
   <div className='project-flex'>
     
     {projectlist.map((e, index) =>{
-        return <><p className='tilted-para' whilehover={{color:'red'}} key={index}>{e.name}</p><hr className='solid'/></>
+        return <><p className='tilted-para' whilehover={{color:'red'}} key={index}><a className='broken-link' href={e.link}>{e.name}</a></p><hr className='solid'/></>
     })}
 
 
