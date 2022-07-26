@@ -10,12 +10,6 @@
   -webkit-clip-path: ellipse(93% 100% at 40.97% 100%);
           clip-path: ellipse(93% 100% at 40.97% 100%);
 }
-
-.broken-link{
-  text-decoration: none;
-  color: #050505;
-}
-
 .main-project .project-head {
   font-size: 2.5rem;
   font-weight: 700;
@@ -33,7 +27,7 @@
   transform: translate3d(0px, 0px, 0px) perspective(1px) skew(0.0294deg, 0deg);
   padding-top: 0.5em;
   padding-bottom: 0.7em;
-  transform: scaleX(1.2) scaleY(1.2);
+  transform: scaleX(1.5) scaleY(1.2);
   white-space: nowrap;
   font-size: 4rem;
   font-weight: 900;

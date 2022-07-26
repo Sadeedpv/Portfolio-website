@@ -12,7 +12,7 @@ function Projects() {
         triggerOnce: true,
         rootMargin: '-50px 0px',
       })
-    const {darksign, toggledarkmode} = React.useContext(Darkmodecontext);
+    const {darksign} = React.useContext(Darkmodecontext);
 
 
    return window.innerWidth > 1200 ? <motion.div className='main-project' style={{backgroundColor:darksign? '#f5f5f5':'#0d0d0d', color:darksign?'#233142':'white'}}
@@ -21,7 +21,7 @@ function Projects() {
         <div className='project-flex'>
 
             {projectlist.map((e, index) =>{
-                return <><Tilt><p className='tilted-para' whilehover={{color:'red'}} key={index}><a className='broken-link' href={e.link}>{e.name}</a></p></Tilt><hr className='solid'/></>
+                return <Tilt><p className='tilted-para' whilehover={{color:'red'}} key={index}><a className='broken-link tilted-para' href={e.link}>{e.name}</a></p></Tilt>
             })}
 
 
@@ -32,7 +32,7 @@ function Projects() {
   <div className='project-flex'>
     
     {projectlist.map((e, index) =>{
-        return <><p className='tilted-para' whilehover={{color:'red'}} key={index}><a className='broken-link' href={e.link}>{e.name}</a></p><hr className='solid'/></>
+        return <p className='tilted-para' whilehover={{color:'red'}} key={index}><a className='broken-link' href={e.link}>{e.name}</a><hr className='solid'/></p>
     })}
 
 

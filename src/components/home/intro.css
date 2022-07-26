@@ -106,14 +106,12 @@
   .intro h1 .name {
     font-size: 2.8rem;
   }
-
   .intro {
     padding-left: 6em;
   }
   .intro .gray-text {
     font-size: 1rem;
   }
-
   .pic img {
     max-width: 100%;
   }
@@ -123,13 +121,11 @@
     margin-top: -4em;
     grid-template-areas: "intro-title" "intro-pic";
   }
-
   .pic {
     grid-area: intro-title;
     padding-top: 0.5em;
     margin-bottom: -5em;
   }
-
   .intro {
     grid-area: intro-pic;
     padding-left: 6em;
@@ -142,11 +138,9 @@
     max-width: 100%;
     margin-left: 2em;
   }
-
   .intro {
     padding-left: 4em;
   }
-
   .intro h1 {
     font-size: 2.2rem;
   }
