@@ -33,6 +33,7 @@
   font-weight: 900;
   position: relative;
   transition: all 900ms;
+  color: #FF0066 !important;
 }
 .main-project .project-flex .tilted-para::before {
   content: "";
@@ -46,9 +47,6 @@
   left: -50px;
   transform: rotate(45deg);
 }
-.main-project .project-flex .tilted-para:hover {
-  color: #FF0066;
-}
 .main-project .project-flex .tilted-para:hover::before {
   width: 30px;
   height: 30px;
@@ -57,6 +55,11 @@
   margin: 0 -5px;
   border: 0;
   border-top: 1px solid #c9c7c7;
+}
+
+.broken-link{
+  color:#FF0066;
+  text-decoration: none;
 }
 
 @media all and (max-width: 926px) {
