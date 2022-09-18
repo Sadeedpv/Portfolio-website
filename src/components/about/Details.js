@@ -62,9 +62,9 @@ function Details() {
           <div className='about-text'><p>It's not about what I can do, but what you can do with my help.
             I can help your company grow large. I am currently a <strong> front-end developer </strong> and extending my skills on full-stack web development. </p>
             <ul>
-              <li onClick={() => setOpen(true)}><a style={{color:darksign?'black':'white'}}> Why your company need a website? </a></li>
+              <li onClick={() => setOpen(true)}><p style={{color:darksign?'black':'white'}}> Why your company needs a website? </p></li>
 
-              <li onClick={() => setopen2(true)}><a style={{color:darksign?'black':'white'}}>How a developer can help your company grow?</a></li>
+              <li onClick={() => setopen2(true)}><p style={{color:darksign?'black':'white'}}>How a developer can help your company grow?</p></li>
 
             </ul>
             </div>
