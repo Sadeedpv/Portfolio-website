@@ -1,7 +1,7 @@
 import React from 'react'
 import Skillitem from './Skillitem'
 import './skill.css'
-import {FaUmbrella, FaPencilAlt, FaMagic} from 'react-icons/fa'
+import {FaUmbrella, FaMagic} from 'react-icons/fa'
 import {BsPencilSquare} from 'react-icons/bs'
 
 function Skill() {

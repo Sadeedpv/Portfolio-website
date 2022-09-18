@@ -65,12 +65,12 @@
   list-style: circle;
   padding: 0.4em;
 }
-.aboutbg .grid-about .detailed ul li a {
+.aboutbg .grid-about .detailed ul li p {
   text-decoration: none;
   color: #FF0066;
   font-weight: 600;
 }
-.aboutbg .grid-about .detailed ul li a:hover {
+.aboutbg .grid-about .detailed ul li p:hover {
   color: #FF0066 !important;
 }
 
