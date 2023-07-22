@@ -52,7 +52,7 @@ $spacing-for-smaller-devices:0.4em 0.6em 0em 1.4em;
                 padding-left: 2em;
                 .active{
                     border: 3px solid $--main-clr;
-                    border-radius: 10px;
+                    border-radius: 5px;
                     padding: 5px;
                     padding-left:  14px;
                     padding-right: 14px;
@@ -74,7 +74,7 @@ $spacing-for-smaller-devices:0.4em 0.6em 0em 1.4em;
                     position: absolute;
                     bottom: 0;
                     left:25px;
-                    transition: 500ms;
+                    transition: 250ms;
                     }
                     &::after{
                         content:"";

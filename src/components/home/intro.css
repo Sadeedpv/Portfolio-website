@@ -51,8 +51,7 @@
   font-size: 1.25rem;
   font-weight: bold;
   margin-top: 2em;
-  transition: 200ms ease-out;
-  transition-delay: 50ms;
+  transition: 100ms ease-out;
   transform-origin: center;
   box-shadow: -3px 11px 39px -26px rgba(255, 0, 102, 0.75);
   -webkit-box-shadow: -3px 11px 39px -26px rgba(255, 0, 102, 0.75);

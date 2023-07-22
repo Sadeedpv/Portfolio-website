@@ -46,7 +46,7 @@ function App() {
 
       {/* Plan cards */}
 
-      <Card />      
+      {/* <Card />       */}
 
       {/* Projects Section */}
       <Projects />

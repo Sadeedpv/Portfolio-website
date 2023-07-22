@@ -48,7 +48,7 @@
 }
 .navbar .contents ul li .active {
   border: 3px solid #FF0066;
-  border-radius: 10px;
+  border-radius: 5px;
   padding: 5px;
   padding-left: 14px;
   padding-right: 14px;
@@ -71,7 +71,7 @@
   position: absolute;
   bottom: 0;
   left: 25px;
-  transition: 500ms;
+  transition: 250ms;
 }
 .navbar .contents ul li a::after {
   content: "";
@@ -130,57 +130,25 @@
     margin-right: 2em;
   }
   .navbar .contents .nav-icon .path1 {
-    -webkit-animation-name: fill1;
-            animation-name: fill1;
-    -webkit-animation-delay: -1s;
-            animation-delay: -1s;
-    -webkit-animation-duration: 700ms;
-            animation-duration: 700ms;
-    -webkit-animation-iteration-count: infinite;
-            animation-iteration-count: infinite;
+    animation-name: fill1;
+    animation-delay: -1s;
+    animation-duration: 700ms;
+    animation-iteration-count: infinite;
     transition: all 1s linear;
   }
   .navbar .contents .nav-icon .path2 {
-    -webkit-animation-name: fill1;
-            animation-name: fill1;
-    -webkit-animation-delay: 0.5s;
-            animation-delay: 0.5s;
-    -webkit-animation-duration: 700ms;
-            animation-duration: 700ms;
-    -webkit-animation-iteration-count: infinite;
-            animation-iteration-count: infinite;
+    animation-name: fill1;
+    animation-delay: 0.5s;
+    animation-duration: 700ms;
+    animation-iteration-count: infinite;
     transition: all 1s linear;
   }
   .navbar .contents .nav-icon .path3 {
-    -webkit-animation-name: fill1;
-            animation-name: fill1;
-    -webkit-animation-delay: 0.8s;
-            animation-delay: 0.8s;
-    -webkit-animation-duration: 700ms;
-            animation-duration: 700ms;
-    -webkit-animation-iteration-count: infinite;
-            animation-iteration-count: infinite;
+    animation-name: fill1;
+    animation-delay: 0.8s;
+    animation-duration: 700ms;
+    animation-iteration-count: infinite;
     transition: all 1s linear;
-  }
-  @-webkit-keyframes fill1 {
-    0% {
-      transform: scaleX(20%);
-    }
-    20%, 80% {
-      transform: scaleX(40%);
-    }
-    30% {
-      transform: scaleX(60%);
-    }
-    50%, 70% {
-      transform: scaleX(80%);
-    }
-    60% {
-      transform: scaleX(100%);
-    }
-    100% {
-      transform: scaleX(20%);
-    }
   }
   @keyframes fill1 {
     0% {

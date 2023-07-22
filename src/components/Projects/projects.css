@@ -24,6 +24,7 @@
   justify-content: center;
 }
 .main-project .project-flex .tilted-para {
+  color: #FF0066 !important;
   transform: translate3d(0px, 0px, 0px) perspective(1px) skew(0.0294deg, 0deg);
   padding-top: 0.5em;
   padding-bottom: 0.7em;
@@ -57,6 +58,11 @@
   margin: 0 -5px;
   border: 0;
   border-top: 1px solid #c9c7c7;
+}
+
+.broken-link{
+  color: #FF0066;
+  text-decoration: none;
 }
 
 @media all and (max-width: 926px) {

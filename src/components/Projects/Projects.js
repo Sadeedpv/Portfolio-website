@@ -15,8 +15,14 @@ function Projects() {
     const {darksign, toggledarkmode} = React.useContext(Darkmodecontext);
 
 
-   return window.innerWidth > 1200 ? <motion.div className='main-project' style={{backgroundColor:darksign? '#f5f5f5':'#0d0d0d', color:darksign?'#233142':'white'}}
-   id='projects' ref={ref} initial={{opacity:'0%', height:'0%'}} animate={{opacity:inView? '100%':'0%', height:inView?'100%':'0%'}} transition={{duration:1, }}>
+   return window.innerWidth > 1200 ? <motion.div 
+   className='main-project' 
+   style={{backgroundColor:darksign? '#f5f5f5':'#0d0d0d', color:darksign?'#233142':'white'}}
+   id='projects' ref={ref} 
+   initial={{opacity:'0%', height:'0%'}} 
+   animate={{opacity:inView? '100%':'0%', height:inView?'100%':'0%'}} 
+   transition={{duration:1, }}
+   >
         <div className='project-head'>My Projects&nbsp;<span style={{color:'#FF0066', fontWeight:'1000', fontSize:'2rem'}}>.</span></div>
         <div className='project-flex'>
 

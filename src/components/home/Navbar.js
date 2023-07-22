@@ -75,7 +75,6 @@ function Navbar() {
 
 
         <ul>
-
           <li><a href='# ' style={{ color:darksign? 'black':'white'}} className={active === 'Home' ? 'active icon': ''} 
           onClick={() =>{
             setactive('Home')
