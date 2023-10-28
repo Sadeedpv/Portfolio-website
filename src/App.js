@@ -28,20 +28,20 @@ function App() {
   const {darksign, toggledarkmode} = useContext(Darkmodecontext)
 
 
-  return state?
+  return state ? (
     <div ref={loadRef} className="MainPage">
       {/* Hero section */}
-    <Backtotop />
-    <Cursor />
-    <Navbar />
-    <Intro />
+      <Backtotop />
+      <Cursor />
+      <Navbar />
+      <Intro />
 
-    {/* About section */}
-    
-      <About text='Do Nothing and Feel Great!' first={true}/>
+      {/* About section */}
+
+      <About text="It's not a bug, it's a feature" first={true} />
       <Details />
       <Skill />
-      <About text='Create Your own Mark!' first={false}/>
+      <About text="Create Your own Mark!" first={false} />
       <Service />
 
       {/* Plan cards */}
@@ -50,8 +50,10 @@ function App() {
 
       {/* Projects Section */}
       <Projects />
-      
-    </div>: <LoadingPage />;
+    </div>
+  ) : (
+    <LoadingPage />
+  );
 }
 
 export default App;
