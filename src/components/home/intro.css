@@ -14,7 +14,7 @@
   padding-top: 4em;
 }
 .intro h1 {
-  font-size: 4.2rem;
+  font-size: 5.2rem;
   line-height: 1.55;
   font-weight: 750;
   text-align: left;
@@ -29,7 +29,7 @@
 .intro h1 .name {
   color: #FF0066;
   font-weight: 900;
-  font-size: 4.4rem;
+  font-size: 5.4rem;
   display: inline;
 }
 .intro h1 .name .block {
@@ -39,7 +39,7 @@
 .intro .sub-intro {
   color: black;
   opacity: 90%;
-  font-size: 1.85rem;
+  font-size: 1.85em;
 }
 .intro .intro-button {
   padding: 12px;
@@ -66,20 +66,10 @@
 }
 .intro .gray-text {
   opacity: 50%;
-  font-size: 1.2rem;
+  font-size: 1.7rem;
   max-width: 24em;
   padding-top: 0.5em;
   line-height: 1.6;
-}
-
-.pic {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  grid-area: intro-pic;
-}
-.pic img {
-  max-width: 200%;
 }
 
 .follow-more {
